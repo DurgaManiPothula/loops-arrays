@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JavaScript Loops
+        </title>
+    </head>
+    <body>
+        <h3><u>Arrays Concept</u></h3>
+        <h4 id ="arr"></h4>
+        <h4 id ="sorted"></h4>
+        <script>
+        var varr=[];
+        n=prompt("Enter no.of elements");
+        for(let i=0;i<n;i++)
+        {
+            let v=prompt("Enter the element");
+            varr.push(v);
+        }
+      
+        document.getElementById("arr").innerHTML ="Given array is : "+ varr;
+        varr.sort(function(a,b){return a-b});
+        document.getElementById("sorted").innerHTML ="Array after sorting is : "+ varr;
+    </script>
+
+    </body>
+</html>

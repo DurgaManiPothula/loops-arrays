@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript Loops
+    </title>
+</head>
+
+<body>
+    <h3><u>Numbers from 1-100 using for loop</u></h3>
+    <p id="loop"></p>
+    <script>
+        let text = "\t";
+        for (let val = 1; val < 101; val++) {
+            if (val % 3 == 0 && val % 5 == 0)
+                text += "\tTalentioCompany" + "<br>";
+            else if (val % 3 == 0)
+                text += "\tTalentio" + "<br>";
+            else if (val % 5 == 0)
+                text += "\tCompany" + "<br>";
+            else
+                text += "\t" + val + "<br>";
+        }
+        document.getElementById("loop").innerHTML = text;
+
+
+          //console.log(arr);
+    </script>
+    <a href="string_to_array.html">Click here to go to String_to_Array Concept</a><br><br>
+    <a href="fixed_method.html">Click here to go to Fixed() Concept</a><br><br>
+    <a href="arrays.html">Click here to go to Arrays Sorting Concept</a><br><br>
+</body>
+
+</html>
