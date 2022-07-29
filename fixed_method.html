@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JS strings
+    </title>
+</head>
+
+<body> 
+    <h3><u>JavaScript Fixed() Concept</u></h3>
+    <h3 id ="fixed"></h3>
+    
+    <script>
+        let n = prompt("Enter number of elements");
+        let text = "";
+        for (let i = 0; i < n; i++) {
+
+            var num = prompt("Enter a number");
+            let p = prompt("Enter the precision value");
+            var res = Number(num).toFixed(Number(p));
+            text += "The value of " + num + " with precision value " + p + " is " + res + "<br><br>";
+
+        }
+        document.getElementById("fixed").innerHTML = text;
+
+
+    </script>
+   
+</body>
+
+</html>
